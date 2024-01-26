@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+body {
+	background: lightgreen;
+}
+
+.main {
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+}
+
+a {
+	margin-left: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<h1>
+			<b>Movie Admin Page</b>
+		</h1>
+		<a th:href="@{/addMovieDetailsPage}" style="color: blue; font-size: 20px; 
+		text-decoration: none"> Add Movie </a> 
+		<a th:href="@{/modifyMovie}" style="color: blue; 
+		font-size: 20px; text-decoration: none"> Modify Movie </a>
+	</div>
+</body>
+</html>

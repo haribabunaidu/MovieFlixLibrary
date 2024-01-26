@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+body {
+	background: lightgreen;
+}
+
+.main {
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+}
+
+input[type=submit] {
+	align-content: center;
+	margin: 0 auto;
+	display: block;
+}
+
+a {
+	margin-left: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<h1>
+			<b>Search</b> 
+			<a th:href="@{/admin}" style="font-size: 40px; text-decoration: none"> Admin </a>
+		</h1>
+		 
+		<a th:href="@{/showMoviesByMovieId}" style="background-color: yellow; font-size: 25px; text-decoration: none"> by Movie Id </a>
+		<a th:href="@{/showMoviesByMovieName}" style="background-color: yellow; font-size: 25px; text-decoration: none"> by Movie Name </a>
+		<a th:href="@{/showMoviesByMovieCollection}" style="background-color: yellow; font-size: 25px; text-decoration: none"> by Movie Collection </a>
+	</div>
+</body>
+</html>

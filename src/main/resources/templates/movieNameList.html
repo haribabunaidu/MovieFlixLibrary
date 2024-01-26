@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="_layout">
+<!-- <style>
+.div-1 {
+	color: indigo;
+}
+
+.div-2 {
+	color: red;
+}
+</style> -->
+<body style="background-color: lightgreen">
+	<div style="padding: 10px">
+		<h3>Movie Names List:</h3>
+	</div>
+	<div style="padding: 10px">
+		<div>
+			<section>
+				<table border="1">
+					<tbody>
+						<tr>
+							<th>Movie Id</th>
+							<th>Movie Name</th>
+							<th>Movie Collection</th>
+						</tr>
+						<tr th:each="movie1:${movie}">
+							<td th:text="${movie1.movieId}"></td>
+							<td th:text="${movie1.movieName}"></td>
+							<td th:text="${movie1.movieCollection}"></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</div>
+	<div>
+		<a href="/"
+			style="font-size: 30px; text-decoration: none; float: right;"> <u>Home</u>
+		</a>
+	</div>
+</body>
+</html>

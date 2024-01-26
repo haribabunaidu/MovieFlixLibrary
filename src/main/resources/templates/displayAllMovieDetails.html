@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+
+<body style="background-color: lightgreen">
+	<h1>Movie Info and Movie Details</h1>
+	<p>Movies Details</p>
+	<table border="1">
+		<tr>
+			<th>Movie Id</th>
+			<th>Movie Name</th>
+			<th>Movie Collection</th>
+		</tr>
+		<tr th:each="movie: ${movie}">
+			<td th:text="${movie.movieId}"></td>
+			<td th:text="${movie.movieName}"></td>
+			<td th:text="${movie.movieCollection}"></td>
+		</tr>
+	</table>
+		<div class="main">
+		<a href="/"
+			style="font-size: 30px; text-decoration: none; float: right;"> <u>Home</u>
+		</a>
+		<a th:href="@{/addMovieDetailsPage}"
+			style="color: blue; text-decoration: none; float: right; font-size: 30px;">
+			<u>Add Movies</u>
+		</a> 
+	</div>
+</body>
+</html>

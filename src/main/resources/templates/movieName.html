@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+</head>
+
+<body style="background-color: lightgreen">
+	<div class="container">
+		<h1>
+			<b>Search By Movie Name:</b>
+		</h1>
+		<form th:action="@{/movie/movieName}" method="GET">
+			<input type="text" th:name="movieName" id="movieName" size="50"
+				th:value="${movieName}" placeholder="search by movie name">
+			<button type="submit" class="btn btn-info">Search</button>
+		</form>
+	</div>
+</body>
+</html>

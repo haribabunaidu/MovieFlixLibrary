@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="_layout">
+
+<body>
+
+	<div layout:fragment="content">
+		<form action="/addMovieDetails" method="POST"
+			style="background-color: lightgreen">
+			<section class="panel">
+				<h1>Enter New Movie Details</h1>
+				<div class="panel-body">
+					<div class="form-group">
+						Enter Movie ID: <input type="text" class="form-control"
+							id="movieId" name="movieId" required>
+					</div>
+					<br>
+
+					<div class="form-group">
+						Enter Movie Name: <input type="text" class="form-control"
+							id="movieName" name="movieName" required>
+					</div>
+					<br>
+
+					<div class="form-group">
+						Enter Movie Collection: <input type="text" class="form-control"
+							id="movieCollection" name="movieCollection" required>
+					</div>
+					<br>
+				</div>
+			</section>
+			<section class="panel">
+				<div class="panel-body">
+					<button type="submit" class="btn btn-primary">ADD</button>
+				</div>
+			</section>
+		</form>
+	</div>
+</body>
+</html>
